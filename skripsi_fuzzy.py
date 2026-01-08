@@ -716,11 +716,11 @@ print(fuzzy_grid_classified_biome)
 def get_neighbors(grid, y, x):
     neighbors = []
 
-    # Loop through 8 surrounding cells
+    # Loop melewati 8 cells yang bertetangga
     for dy in [-1, 0, 1]:
         for dx in [-1, 0, 1]:
             if dy == 0 and dx == 0:
-                continue  # skip itself
+                continue 
 
             ny, nx = y + dy, x + dx
 
